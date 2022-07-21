@@ -8,7 +8,10 @@
     <body>
         <h3 th:text="${titulo}">title</h3>
         <ul>
+            <li th:text="${usuario.identificador}">item</li>
             <li th:text="${usuario.nombre}">first</li>
+            <li th:text="${usuario.Apellidos}">item</li>
+            <li th:text="${usuario.username}">item</li>          
             <li th:text="${usuario.password}">second</li>
             <li th:text="${usuario.email}">third</li>
         </ul>

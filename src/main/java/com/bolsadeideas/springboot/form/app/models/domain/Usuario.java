@@ -7,12 +7,24 @@ package com.bolsadeideas.springboot.form.app.models.domain;
 import javax.validation.constraints.NotEmpty;
 
 public class Usuario {
+    
+    private String identificador;
+    
     @NotEmpty
-     String nombre;
+    private String username;
+    
     @NotEmpty
-     String password;
+    private String Apellidos;
+    
     @NotEmpty
-     String email;
+    private String nombre;
+    
+    @NotEmpty
+    private String password;
+    
+    
+    @NotEmpty
+    private String email;
 
     /**
      * @return the nombre
@@ -54,6 +66,30 @@ public class Usuario {
      */
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getApellidos() {
+        return Apellidos;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setApellidos(String Apellidos) {
+        this.Apellidos = Apellidos;
+    }
+
+    public String getIdentificador() {
+        return identificador;
+    }
+
+    public void setIdentificador(String identificador) {
+        this.identificador = identificador;
     }
     
     
